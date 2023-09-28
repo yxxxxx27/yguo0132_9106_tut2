@@ -10,5 +10,10 @@ The  imaging technique that inspiring me is Cytus II. It's a music game, and the
 ### part 2
 ctx.scale(x, y)
 
-I can use the parameters x and y to indicate the scaling factors for the x- and y-axes, respectively. This way, all subsequent drawing operations are scaled. There is no need to recalculate the radius of the circle each time.
-https://docs.google.com/document/d/1_a_VRoFm4V-k9twG8RYRDo7i-GcJ0iXT7yvfoxS7rZg/edit
+I can use this code to control the zooming in or out of the graphic.
+Using ctx.scale() makes it easy to create zoom animations without having to recalculate the coordinates of each drawing instruction, which is more efficient than manually adjusting the coordinates of each drawing instruction.
+
+Also, I can set different scale size for different shapes or parts of shapes. This way only one part of the graphic is used to zoom in while keeping the rest of the graphic at its original size. This makes it easy to draw and manipulate a large number of shapes.
+
+https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/scale
+
